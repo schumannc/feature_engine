@@ -52,8 +52,8 @@ be indiacated, or the imputer will automatically select all categorical variable
 	encoder.fit(train_t, y_train)
 
 	# transform
-	train_t = rare_encoder.transform(train_t)
-	test_t = rare_encoder.transform(test_t)
+	train_t = encoder.transform(train_t)
+	test_t = encoder.transform(test_t)
 
 	encoder.encoder_dict_
 
